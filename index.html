@@ -8,20 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="sound">
-      <audio autoplay loop>
-        <source src="audio.ogg" type="audio/ogg">
-        <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+    <audio id="aud" loop=""> 
+      <source src="https://spiral-gravel.000webhostapp.com/a/audio.mp3"> 
+     </audio>
 
     <div class="container">
       <div class="untoldcoding">
         <div class="img-container">
           <img
             src="chandan.jpg"
-            alt=""
           />
         </div>
         <div class="untoldcoding-details">
@@ -36,7 +31,10 @@
       </div>
     </div>
     <script>
-      audioElement.play();
+   window.addEventListener('click', function() {
+    var audio = document.getElementById("aud");
+    audio.play();
+});
     </script>
   </body>
   
